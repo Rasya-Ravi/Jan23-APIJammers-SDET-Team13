@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "programId": {
+      "type": "integer"
+    },
+    "programName": {
+      "type": "string"
+    },
+    "programDescription": {
+      "type": "string"
+    },
+    "programStatus": {
+      "type": "string"
+    },
+    "creationTime": {
+      "type": "string"
+    },
+    "lastModTime": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "programId",
+    "programName",
+    "programDescription",
+    "programStatus",
+    "creationTime",
+    "lastModTime"
+  ]
+}
