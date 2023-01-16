@@ -13,7 +13,7 @@ package testRunner;
 	@CucumberOptions
 	 (
 		
-		features="C:\\Users\\Rasya Ravi\\eclipse-workspace\\Jan23-APIJammers-SDET-Team13\\src\\test\\resources\\Features",
+		features="src\\test\\resources\\Features",
 	   	    
 	   
 	glue = "stepDefenitions" ,
