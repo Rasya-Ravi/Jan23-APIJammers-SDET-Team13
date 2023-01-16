@@ -13,15 +13,13 @@ package testRunner;
 	@CucumberOptions
 	 (
 		
-		features="C:\\Users\\Rasya Ravi\\eclipse-workspace\\Cucumber_Selenium_Java\\src\\test\\resources\\features",
+		features="C:\\Users\\Rasya Ravi\\eclipse-workspace\\Jan23-APIJammers-SDET-Team13\\src\\test\\resources\\Features",
+	   	    
 	   
-	    glue={"StepDefenition"},
-	     tags="@tag1")
-	    // dryRun=true,
-	   // plugin={"pretty",
-	    		//"html:test-output"};
-		
-		
+	glue = "stepDefenitions" ,
+			dryRun = false,
+			monochrome = true,
+			plugin = {"pretty","html:target/HtmlReports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"})
 		
 	public class TestRun{
 		
