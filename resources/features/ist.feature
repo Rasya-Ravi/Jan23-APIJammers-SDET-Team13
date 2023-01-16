@@ -14,5 +14,5 @@ Feature: Tests for LMSAPI
     Then Validate Corresponding response status code 200
  Examples: 
       | ProgramID |
-      |      2926 |
+      |     6717 |
        |     1567 |
