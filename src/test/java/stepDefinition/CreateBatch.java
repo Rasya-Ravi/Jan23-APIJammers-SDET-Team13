@@ -59,10 +59,10 @@ public class CreateBatch {
 		validatableResponse.statusCode(201);
 	}
 
-	@Then("Validate Content - Type")
+	/*@Then("Validate Content - Type")
 	public void validate_content_type() {
 		System.out.println(response.getHeader("content-type"));
-	}
+	}*/
 
 	@Then("Validate batch Response time")
 	public void validate_response_time() {

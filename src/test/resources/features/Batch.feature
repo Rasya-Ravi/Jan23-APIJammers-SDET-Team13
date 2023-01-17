@@ -26,9 +26,9 @@ Feature: Title of your feature
    When POST request is made with batch "<batchName>","<batchDescription>","<batchStatus>",<batchNoOfClasses>,<programId>
    Then Validate  batchId and ProgramName created
    And Validate Batch status code
-   And Validate Content - Type
+   #And Validate Content - Type
    And Validate batch Response time
    
    Examples: 
    |batchName|batchDescription|batchStatus|batchNoOfClasses|programId|
-   |Jan23-APIJAMMERS2|API Jammers|Active|15|307|
+   |Jan23-APIJAMMERS45|API Jammers|Active|15|307|
