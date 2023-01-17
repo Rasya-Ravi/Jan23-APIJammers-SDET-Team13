@@ -16,7 +16,7 @@ package testRunner;
 		features="src\\test\\resources\\Features",
 	   	    
 	   
-	glue = "stepDefenitions" ,
+	glue = "stepDefinition" ,
 			dryRun = false,
 			monochrome = true,
 			plugin = {"pretty","html:target/HtmlReports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"})

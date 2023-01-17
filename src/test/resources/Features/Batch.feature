@@ -23,12 +23,12 @@ Feature: Title of your feature
   @tag1
   Scenario Outline: Create Batch
    Given A service with Batch BaseUrl 
-   When POST request is made with batch "<batchName>","<batchDescription>","<batchStatus>",<batchNoOfClasses>,<programId>
+   When POST request is made with batch "<batchDescription>","<batchStatus>",<batchNoOfClasses>,<programId>
    Then Validate  batchId and ProgramName created
    And Validate Batch status code
-   #And Validate Content - Type
+   And Validate Batch Content - Type
    And Validate batch Response time
    
    Examples: 
-   |batchName|batchDescription|batchStatus|batchNoOfClasses|programId|
-   |Jan23-APIJAMMERS45|API Jammers|Active|15|307|
+   |batchDescription|batchStatus|batchNoOfClasses|programId|
+   |API JammersTeam13|Active|15|307|

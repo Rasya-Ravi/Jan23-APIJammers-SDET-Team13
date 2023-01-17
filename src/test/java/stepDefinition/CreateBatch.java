@@ -8,7 +8,7 @@ import io.restassured.http.ContentType;
 import io.restassured.matcher.ResponseAwareMatcher;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-
+import utilities.CommonUtilities;
 
 import static io.restassured.RestAssured.given;
 
@@ -32,11 +32,11 @@ public class CreateBatch {
 		RestAssured.baseURI = "https://lms-backend-service.herokuapp.com/lms";
 	}
 	
-	@When("POST request is made with batch {string},{string},{string},{double},{double}")
-	public void post_request_is_made_with(String bName, String bDesc, String bstatus, Double bNoOfClasses,Double pgmId) {
+	@When("POST request is made with batch {string},{string},{double},{double}")
+	public void post_request_is_made_with(String bDesc, String bstatus, Double bNoOfClasses,Double pgmId) {
         JSONObject request = new JSONObject();
 		
-		request.put("batchName",bName);
+		request.put("batchName","Numpy Ninja_SDET" +CommonUtilities.getRandomString().substring(0,5));
 		request.put("batchDescription",bDesc);
 		request.put("batchStatus",bstatus);
 		
@@ -59,10 +59,10 @@ public class CreateBatch {
 		validatableResponse.statusCode(201);
 	}
 
-	/*@Then("Validate Content - Type")
+	@Then("Validate Batch Content - Type")
 	public void validate_content_type() {
 		System.out.println(response.getHeader("content-type"));
-	}*/
+	}
 
 	@Then("Validate batch Response time")
 	public void validate_response_time() {
