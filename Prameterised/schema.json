@@ -1,0 +1,83 @@
+{
+    "definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1673835000.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"programId",
+			"programName",
+			"programDescription",
+			"programStatus",
+			"creationTime",
+			"lastModTime"
+		],
+		"properties": {
+			"programId": {
+				"$id": "#root/items/programId", 
+				"title": "Programid", 
+				"type": "integer",
+				"examples": [
+					4654
+				],
+				"default": 0
+			},
+			"programName": {
+				"$id": "#root/items/programName", 
+				"title": "Programname", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"15Jan-NinjaSpark-SDET-349"
+				],
+				"pattern": "^.*$"
+			},
+			"programDescription": {
+				"$id": "#root/items/programDescription", 
+				"title": "Programdescription", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"VGtmF"
+				],
+				"pattern": "^.*$"
+			},
+			"programStatus": {
+				"$id": "#root/items/programStatus", 
+				"title": "Programstatus", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Active"
+				],
+				"pattern": "^.*$"
+			},
+			"creationTime": {
+				"$id": "#root/items/creationTime", 
+				"title": "Creationtime", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"2023-01-15T20:50:03.131+00:00"
+				],
+				"pattern": "^.*$"
+			},
+			"lastModTime": {
+				"$id": "#root/items/lastModTime", 
+				"title": "Lastmodtime", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"2023-01-15T20:50:03.131+00:00"
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
+
+}

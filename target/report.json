@@ -1,0 +1,277 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-16T02:32:58.723Z",
+        "line": 6,
+        "name": "Get All Programs",
+        "description": "",
+        "id": "tests-for-lmsapi;get-all-programs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 448769800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "A service with BaseUrl/endpoint",
+            "match": {
+              "location": "Steps.GetProgram.a_service_with_base_url_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1766836600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "GET Request is made",
+            "match": {
+              "location": "Steps.GetProgram.get_request_is_made()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138906300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.GetProgram.validate_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T02:33:01.136Z",
+        "line": 17,
+        "name": "Get Program by Id",
+        "description": "",
+        "id": "tests-for-lmsapi;get-program-by-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "A service BaseUrl with endpoint",
+            "match": {
+              "location": "Steps.GetProgram.a_service_base_url_with_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271274800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i made GET Request with 2926",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2926",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.GetProgram.i_made_get_request_with(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 570915900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Validate Corresponding response status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "Steps.GetProgram.validate_corresponding_response_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-16T02:33:01.983Z",
+        "line": 18,
+        "name": "Get Program by Id",
+        "description": "",
+        "id": "tests-for-lmsapi;get-program-by-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "A service BaseUrl with endpoint",
+            "match": {
+              "location": "Steps.GetProgram.a_service_base_url_with_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 252219600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i made GET Request with 1567",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1567",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.GetProgram.i_made_get_request_with(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 305065200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Validate Corresponding response status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "Steps.GetProgram.validate_corresponding_response_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Tests for LMSAPI",
+    "description": "  Description: The purpose of this is to create feature and step definitions for testing API\n  \n  LMS API URL: https://lms-program-rest-service.herokuapp.com",
+    "id": "tests-for-lmsapi",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ist.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Batch should be there in database already",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2023-01-16T02:33:02.546Z",
+        "line": 14,
+        "name": "Delete Batch by BatchId",
+        "description": "",
+        "id": "tests-for-lmsapi;delete-batch-by-batchid;;2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "A service with BaseUrl with endpoint",
+            "match": {
+              "location": "Steps.deleteBatchByBatchID.a_service_with_base_url_with_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c400\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat Steps.deleteBatchByBatchID.delete_request_is_made(deleteBatchByBatchID.java:36)\r\n\tat ✽.DELETE request is made 1895(file:///C:/Users/dgupta3/eclipse-workspace/APO/src/test/resources/features/deleteBatchByID.feature:8)\r\n",
+              "duration": 273282500,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "DELETE request is made 1895",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1895",
+                  "offset": 23
+                }
+              ],
+              "location": "Steps.deleteBatchByBatchID.delete_request_is_made(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Validate Status Code",
+            "match": {
+              "location": "Steps.deleteBatchByBatchID.validate_status_code()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Validate Response time",
+            "match": {
+              "location": "Steps.deleteBatchByBatchID.validate_response_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998900,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Valiadte Status is ok",
+            "match": {
+              "location": "Steps.deleteBatchByBatchID.valiadte_status_is_ok()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Tests for LMSAPI",
+    "description": "  Description: The purpose of this is to create feature and step definitions for testing API\n  \n  LMS API URL: https://lms-program-rest-service.herokuapp.com",
+    "id": "tests-for-lmsapi",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/deleteBatchByID.feature",
+    "tags": []
+  }
+]
